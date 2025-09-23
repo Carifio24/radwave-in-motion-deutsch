@@ -49,7 +49,9 @@
           Präsentiert von <a href="https://www.cosmicds.cfa.harvard.edu/" target="_blank" rel="noopener noreferrer">Cosmic Data Stories</a> und <a href="https://www.worldwidetelescope.org/home/" target="_blank" rel="noopener noreferrer">WorldWide Telescope</a>.
           
           <div id="splash-screen-logos">
-            <credit-logos/>
+            <credit-logos
+              :default-logos="['cosmicds', 'wwt', 'sciact', 'nasa-grantee']"
+            />
           </div>
         </div>
       </div>
@@ -211,7 +213,9 @@
           />
       </div>
       <div id="body-logos" v-if= "!smallSize">
-        <credit-logos/>
+        <credit-logos
+          :default-logos="['cosmicds', 'wwt', 'sciact', 'nasa-grantee']"
+        />
       </div>
     </div>
 
